@@ -1,7 +1,6 @@
 import Card from '../card/card.component'
 import './card-list.style.css'
-const CardList= (props) => {
-    const {monsters} =props
+const CardList = ({monsters}) => {
     return (
         <div className='card-list'>
             {
@@ -10,11 +9,10 @@ const CardList= (props) => {
                             id={monster.id}
                             name={monster.name}
                             email={monster.email}
-                    />
+                                />
                 )
             }
         </div>       
     )
 }
-
 export default CardList
