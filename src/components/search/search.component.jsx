@@ -1,14 +1,17 @@
-import './search.style.css'
-const Search=() =>{
+import './search.style.css';
+
+const Search = ({changing}) => {
+
     return (
         <>
             <input
-                className="search-box"
-                type="text"
-                placeholder="Search Monster"
+                className="search-box" 
+                type="text" 
+                placeholder="Search Monsters"
+                onChange={changing}
             />
-            </>
-        )
+        </>
+    )
 }
 
 export default Search
